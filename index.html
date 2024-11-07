@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cineletra</title>
+    <style>
+        @import url("https://use.typekit.net/kuk3tdp.css");
+        @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Jersey+15&display=swap');
+
+        * {
+            margin: 0;
+        }
+
+        body {
+            background-color: #0d1b2a;
+        }
+
+        header {
+            width: 100%;
+            background-color: black;
+
+
+
+        }
+
+        .containerHeader {
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        .img-logo>img {
+            width: auto;
+            height: 119px;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            margin-left: 40px;
+            font-size: 150%;
+            font-family: "minion-pro-caption", serif;
+            font-weight: 400;
+            font-style: normal;
+
+        }
+
+        .pesquisa {
+            width: 20%;
+        }
+
+        .pesquisa>input {
+            background-color: white;
+            width: 100%;
+            height: 40px;
+            border-radius: 20px;
+            border: none;
+            text-transform: uppercase;
+        }
+
+        .person>img {
+            width: auto;
+            height: 60px;
+        }
+
+
+
+
+
+
+
+
+        main {
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+
+        .bannerHome {
+            background-image: url(img/pastlives.jpeg);
+            background-size: cover;
+            background-position: center;
+            width: 98%;
+            height: 602px;
+            margin-top: 20px;
+            margin: 5px;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 7px;
+        }
+
+        .bannerHome>img {
+            position: relative;
+            left: 3%;
+            top: 80%;
+            width: 20%;
+        }
+
+        .aclamados {
+            font-family: "Inter Tight", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+            color: white;
+            text-transform: uppercase;
+            margin-left: 3%;
+            margin-top: 30px;
+        }
+
+        .lista {
+            width: 90%;
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cards {
+            background-color: white;
+            width: 252px;
+            height: 340px;
+            margin-top: 10px;
+            margin: 9px;
+        }
+
+        .disclaimer {
+            width: 90%;
+            height: auto;
+            margin-left: auto;
+            margin-right: auto;
+            margin-left: 2%;
+
+        }
+
+        .musicas {
+            width: 90%;
+            display: flex;
+            flex-direction: row;flex-wrap: wrap;            margin-left: auto;
+            margin-right: auto;
+            margin-top: 10px;
+        }
+
+        .musicas>h1 {
+            font-family: "Inter Tight", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+            color: white;
+            text-transform: uppercase;
+        }
+
+        .esquerda {
+            width: 50%;
+        }
+
+        .direita {
+            width: 50%;
+        }
+
+        .cardEsquerda {
+            background-color: white;
+            width: 837px;
+            height: 368px;
+            border-radius: 9px;
+        }
+
+        .cardDireita {
+            background-color: white;
+            width: 837px;
+            height: 368px;
+            border-radius: 9px;
+
+        }
+
+        footer {
+            margin-top: 10%;
+            width: 100%;
+            padding-top: 20px;
+            background-color: #ffb703;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .imgFooter{
+            position: relative;
+
+
+        }
+
+        .imgFooter>img {
+            width: auto;
+            height: 119px;
+
+        }
+
+        .imgFooter>h1 {
+            font-size: 60px;
+            font-family: "minion-pro", serif;
+            font-weight: 700;
+            font-style: italic;
+        }
+        .imgFooter>h2 {
+            margin-top: -20px;
+            font-family: "Inter Tight", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 800;
+            font-style: normal;
+            color: rgb(255, 255, 255);
+            text-transform: uppercase;
+            
+        }
+
+        .contato {
+            font-family: "Inter Tight", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+            color: rgb(0, 0, 0);
+            text-transform: uppercase;
+        }
+
+        .contato>a {
+            font-family: "Inter Tight", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 800;
+            font-style: normal;
+            color: rgb(0, 0, 0);
+
+        }
+        @media screen and (max-width: 2000px) {
+            .bannerHome {
+            background-image: url(img/pastlives.jpeg);
+            background-size: cover;
+            background-position: center;
+            width: 95%;
+            height: 300px;
+            margin-top: 20px;
+            margin: 5px;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 7px;
+        }
+        a{
+            font-size: 1rem;
+        }
+        .disclaimer{
+            margin-left: auto;
+            margin-right: auto;
+            cursor: pointer;
+
+        }
+        .disclaimer > img {
+            width: 95%;
+            height: auto;
+            margin-left: auto;
+            margin-right: auto;
+            margin-left: 2%;
+
+        }
+        .musicas{
+            display: none;
+        }
+        .pesquisa > input{
+            width: 50%;
+            margin-left: 20%;
+        }
+
+        
+}
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="containerHeader">
+            <div class="img-logo">
+                <img src="img/cineletraV2-02.png" alt="logo">
+            </div>
+            <div class="links">
+                <a href="#">Ínicio</a>
+                <a href="#">Músicas</a>
+                <a href="#">Filmes</a>
+                <a href="#">Seríes</a>
+            </div>
+            <div class="pesquisa">
+                <input type="text">
+
+            </div>
+            <div class="person">
+                <img src="img/person-02.png" alt="">
+            </div>
+        </div>
+
+
+
+    </header>
+    <main>
+        <div class="bannerHome">
+            <img src="img/vidas passadas.png" alt="vidas passadas">
+        </div>
+        <div class="aclamados">
+            <h1>aclamados</h1>
+            <div class="lista">
+                <div class="cards"></div>
+                <div class="cards"></div>
+                <div class="cards"></div>
+                <div class="cards"></div>
+
+            </div>
+        </div>
+        <div class="disclaimer">
+            <img src="img/disclaimer.png" alt="">
+
+        </div>
+        <div class="aclamados">
+            <h1>Booktok</h1>
+            <div class="lista">
+                <div class="cards"></div>
+                <div class="cards"></div>
+                <div class="cards"></div>
+                <div class="cards"></div>
+            </div>
+        </div>
+        <div class="musicas">
+            <div class="esquerda">
+                <div class="cardEsquerda">
+
+                </div>
+
+            </div>
+            <div class="direita">
+                <div class="cardDireita">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+    <footer>
+        <div class="imgFooter">
+            <h1>CINELETRA</h1>
+            <h2>INOVATECH</h2>
+        </div>
+        <div class="contato">
+            <h1>Contato</h1>
+            <p>Suporte@cineletra</p>
+        </div>
+        <div class="contato">
+            <a href="#">Sobre nós</a>
+        </div>
+
+
+
+    </footer>
+
+</body>
+
+</html>
